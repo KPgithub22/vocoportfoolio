@@ -1,0 +1,306 @@
+/*SIIT ALGAB CONTAINER-CONTAINER-1 /AINE PEALKRI JA SISSEJUHATUS*/
+.container-1{
+    position: relative;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #fb6804;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+    .container-1 .card-1 .content-1 h1 /*TEXST /Kuidas sünnib veebileht*/
+    {
+      position: relative;
+      color: rgb(252, 111, 59);
+      font-size: 1.9em;
+      font-weight: 420;
+      margin-bottom: 10px;
+      display: flex; /* Lisatud, et kasutada Flexboxi omadusi */
+      justify-content: center; /* Lisatud, et pealkiri oleks horisontaalselt keskel */
+      align-items: center; /* Lisatud, et pealkiri oleks vertikaalselt keskel */
+      margin-right: 60px;
+    }
+    .container-1 .card-1 .content-1 h4 /*TEXST /Veebikujundus*/
+    {
+      position: relative;
+      color: #07677f;
+      font-size: 1.4em;
+      font-weight: 400;
+      bottom: 20px;
+      display: flex; /* Lisatud, et kasutada Flexboxi omadusi */
+      justify-content: center; /* Lisatud, et pealkiri oleks horisontaalselt keskel */
+      align-items: center; /* Lisatud, et pealkiri oleks vertikaalselt keskel */
+      margin-right: 60px;
+      letter-spacing: 1.4px;
+    }
+  
+  
+    
+    .card-1{
+      border-right: none; /* Eemalda parem raam kaardi paremalt küljelt */
+    }
+    .card-2 {
+      border-left: none; /* Eemalda vasak raam kaardi vasakult küljelt */
+    }
+    .container-1 .card-2 .content-2 h3 /*Pealkiri SISSEJUHATUS*/
+    {
+      position: relative;
+      color: rgb(252, 111, 59);
+      font-size: 1.5em;
+      font-weight: 400;
+      margin-bottom: 10px;
+      display: flex; /* Lisatud, et kasutada Flexboxi omadusi */
+      justify-content: center; /* Lisatud, et pealkiri oleks horisontaalselt keskel */
+      align-items: center; /* Lisatud, et pealkiri oleks vertikaalselt keskel */
+      margin-right: 60px;
+    }
+    .container-1 .card-2 .content-2 p{
+    font-weight: 326;
+    color: #000000;
+    }
+  
+    .container-1 .card-1 .content-1 hr {
+      position: relative;
+      width: 400px;
+      height: 1px; /* Muutke siin soovitud kõrguseks */
+      background-color: black; /* Lisame taustavärvi, et luua värviline joon */
+      border: none; /* Eemaldame vaikimisi piiri */
+      right: 6%;
+  }
+   /*SIIT LÕPEB CONTAINER-CONTAINER-1 /AINE PEALKRI JA SISSEJUHATUS*/
+    
+    
+    
+    /*SIIT ALGAB CONTAINER-3 EHK FOTO VASAK JA TEXST PAREM*/
+    .container-3 {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    max-height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: white;
+    border: 1px solid #fb6304;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    margin-top: 80px;
+  }
+  
+  .raamiga-box-3 {
+    border-radius: 10px;
+    background-color: white;
+    max-height: 600px;
+    margin: 0 auto;
+  }
+  
+  .fotobox {
+    border: 1px solid #fb6304;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 500px; /* Lisasin maksimaalse laiuse */
+    height: 345px;
+    margin-bottom: 20px; /* Muutsin margin-bottom */
+    margin-right: 100px;
+    width: calc(100% - 320px - 30px); /* Vähendasin width, arvestades .raamiga-box-3 paddingut */
+  }
+  
+  .fotobox img {
+    margin: 2px auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .tekstibox {
+    border-radius: 0px;
+    background-color: white;
+    border-left: 1px solid #fb6304;
+    max-width: 500px; /* Lisasin maksimaalse laiuse */
+    flex-grow: 1;
+    margin-right: 40px;
+    padding-left: 20px;
+    margin-top: 50px;
+  }
+  .tekstibox h3{
+    position: relative;
+    color: rgb(252, 111, 59);
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-right: 60px;
+    
+  }
+  .tekstibox h4{
+      position: relative;
+      color: #07677f;
+      font-size: 1.1em;
+      font-weight: 500;
+      bottom: 20px;
+      display: flex; /* Lisatud, et kasutada Flexboxi omadusi */
+      justify-content: left; /* Lisatud, et pealkiri oleks horisontaalselt keskel */
+      align-items: left; /* Lisatud, et pealkiri oleks vertikaalselt keskel */
+      margin-right: 60px;
+      letter-spacing: 1.4px;
+  }
+  .tekstibox p{
+    font-weight: 326;
+    color: #000000;
+  }
+  
+  
+  /*SIIT LÕPPEB CONTAINER-3 EHK FOTO VASAK JA TEXST PAREM*/
+  
+  /*SIIT ALGAB CONTAINER-3 EHK FOTO VASAK JA TEXST PAREM*/
+  .container-4 {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    max-height: 600px;
+    padding-top: 40px;
+    background-color: white;
+    border: 1px solid #fb6304;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    margin-left: 30px;
+    margin-top: 80px;
+  }
+  
+  .raamiga-box-4 {
+    border-radius: 10px;
+    background-color: white;
+    max-height: 600px;
+    margin: 0 auto;
+  }
+  
+  .fotobox-4 {
+    border: 1px solid #fb6304;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 500px; /* Lisasin maksimaalse laiuse */
+    height: 345px;
+    margin-bottom: 20px; /* Muutsin margin-bottom */
+    margin-right: 100px;
+    width: calc(100% - 320px - 30px); /* Vähendasin width, arvestades .raamiga-box-3 paddingut */
+  }
+  
+  .fotobox-4 img {
+    margin: 2px auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .tekstibox-4 {
+    border-radius: 0px;
+    background-color: white;
+    border-left: 1px solid #fb6304;
+    max-width: 500px; /* Lisasin maksimaalse laiuse */
+    flex-grow: 1;
+    margin-right: 40px;
+    padding-left: 20px;
+  }
+  .tekstibox-4 h3{
+    position: relative;
+    color: rgb(252, 111, 59);
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: flex; /* Lisatud, et kasutada Flexboxi omadusi */
+    justify-content: left; /* Lisatud, et pealkiri oleks horisontaalselt keskel */
+    align-items: left; /* Lisatud, et pealkiri oleks vertikaalselt keskel */
+    margin-right: 60px;
+  }
+  .tekstibox-4 h4{
+      position: relative;
+      color: #07677f;
+      font-size: 1.1em;
+      font-weight: 500;
+      bottom: 20px;
+      display: flex; /* Lisatud, et kasutada Flexboxi omadusi */
+      justify-content: left; /* Lisatud, et pealkiri oleks horisontaalselt keskel */
+      align-items: left; /* Lisatud, et pealkiri oleks vertikaalselt keskel */
+      margin-right: 60px;
+      letter-spacing: 1.4px;
+  }
+  .tekstibox-4 p{
+    font-weight: 326;
+    color: #000000;
+  }
+  
+  
+  /*SIIT LÕPPEB CONTAINER-3 EHK FOTO VASAK JA TEXST PAREM*/
+  
+  /*SIIT ALGAB FOOTER*/
+  .viimane-joon {
+    max-width: 1200px;
+    padding: 5px;
+    border-bottom: 1px solid ;
+    background-color: white;
+    margin-top: 20px;
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .viimane-joon p{
+    font-weight: 200;
+    color: #fb6304;
+  }
+  /*SIIT LÕPPEB FOOTER*/
+  
+  /*MENÜÜ ALGUS*/
+  .navbar {
+    background-color: rgb(255, 255, 255); /* Muudame navbari tausta valgeks */
+    border: 1px solid rgb(178, 178, 178); /* Lisame piiratud musta joone */
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: rgb(243, 109, 7); /* Muudame teksti värvi oranžiks */
+  }
+  
+  .navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #050504; /* Muudame teksti värvi oranžiks, kui hiirekursor on üle sõna */
+  }
+  
+  .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: rgb(198, 89, 5); /* Muudame teksti värvi oranžiks dropdown menüüs */
+  }
+  
+  .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    color: rgb(198, 89, 5); /* Muudame teksti värvi oranžiks, kui hiirekursor on üle dropdown menüü sõna */
+  }
+  /* Muuda navbari menüü teksti fonti Montserrat'iks */
+  .navbar-nav .nav-link {
+    font-weight: 400; 
+  }
+  /* MENÜÜ LÕPP*/
+  .content-1{
+    margin-top: 30px;
+  }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

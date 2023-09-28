@@ -1,0 +1,83 @@
+/*ESILEHT ALGUS*/
+.foto {
+    background: url('/css/images/kala2.png');
+    height: 90vh;
+    background-size: 80% auto; /* Muudetud pildi laius ja kõrgus automaatne */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin-bottom: 0.1%;
+    overflow: hidden;
+  }
+ 
+  
+.portfoolio {
+    position: absolute;
+    top: 48%; /* Muutke vastavalt soovile */
+    left: 63%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: #fb6804;
+    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  
+  .kerli-pajusaar {
+    position: absolute;
+    top: 65%; /* Muutke vastavalt soovile */
+    left: 63.5%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: #07677f;
+    letter-spacing: 17px;
+    font-weight: 400;
+  }
+  /* ESILEHE LÕPP*/
+  
+
+  @include media-breakpoint-between(md, xl, xs, lg) {.foto, .kerli-pajusaar, .portfoolio,}  
+
+
+
+  .galerii-section{
+    width: 100%;
+  }
+  .galerii-section .galerii-wrap{
+    padding-top: 10px;
+  }
+  
+  .galerii-section .galerii-wrap .galerii-images{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+  
+/*MENÜÜ ALGUS*/
+.navbar{
+  background-color: rgb(255, 255, 255); /* Muudame navbari tausta valgeks */
+  border: 1px solid rgb(178, 178, 178); /* Lisame piiratud musta joone */
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+      color: rgb(243, 109, 7); /* Muudame teksti värvi oranžiks */
+  }
+    
+  .navbar .navbar-nav .nav-item .nav-link:hover {
+      color: #07677f; /* Muudame teksti värvi oranžiks, kui hiirekursor on üle sõna */
+  }
+    
+  .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+      color: #07677f; /* Muudame teksti värvi oranžiks dropdown menüüs */
+  }
+    
+  .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  color: #07677f; /* Muudame teksti värvi oranžiks, kui hiirekursor on üle dropdown menüü sõna */
+  }
+  /* Muuda navbari menüü teksti fonti Montserrat'iks */
+  .navbar-nav .nav-link {
+  font-weight: 400; 
+  }
+  /* MENÜÜ LÕPP*/
+  

@@ -1,0 +1,293 @@
+
+/*SIIN ALGAB SLAIDER*/
+
+.raam {
+  display: inline-block;
+  padding: 25px; /* Määra soovitud polsterdus */
+  border-width: 0; /* Alustame nulliga, et ainult top ja bottom piirjoon oleks nähtav */
+  border-top-width: 1px; /* Määra raami ülaosa piirjoone paksus */
+  border-bottom-width: 1px; /* Määra raami alaosa piirjoone paksus */
+  border-style: solid; /* Raami stiil (solid, dotted, dashed jne) */
+  border-color: #ee7a0d; /* Raami värv */
+  width: 1190px; /* Raami laius */
+  height: auto; /* Elemendi kõrgus kohaneb sisuga */
+  margin-top: -5%;
+}
+
+
+  
+
+  .päris-lollakas-slaider{
+    display: flex;
+    position: relative;
+    flex-direction: column; 
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 0.1%;
+  }
+  
+  
+  .mida { /*wrapper*/
+    left: 3px;
+    max-width: 1200px;
+    position: relative;
+    margin-top: -5%;
+  }
+  .mida .karusell{ /*wrapper*/
+    left: 3px;
+    white-space: nowrap;
+    font-size: 0;
+    cursor: pointer;
+    overflow: hidden;/*kaotab ära ekraanilt teised fotot ja jätab ainult kom tk*/
+    scroll-behavior: smooth;
+  }
+  .karusell img{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  
+  .karusell.dragging img{
+    pointer-events: none;
+  }
+  .mida img{ /*wrapper*/
+    left: 3px;
+    height: 340px;
+    object-fit: cover;
+    width: calc(100% / 3);
+    margin-left: 14px;
+  }
+  
+  .karusell img:first-child{
+    margin-left: 0px;
+  }
+  
+  .mida i{ /*wrapper*/
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    background: #ee7a0d;
+    border-radius: 50%;
+    transform: translateY(-90%);/*See liigutab nuppu üles või alla foto öörel*/
+  }
+  
+  .mida i:first-child{ /*wrapper*/
+    left: 3px;
+  }
+  .mida i:last-child{
+    right: 3px;
+  }
+
+  /*LOE-ROHKEM FOTODE TEKST*/
+ 
+  .pildike {
+    position: relative;
+  }
+  
+  .pildike img {
+    display: block;
+    width: 100%;
+  }
+
+  
+  
+  @media screen and (max-width: 900px) {
+    .karusell img{
+        width: calc(100% / 2);
+  
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .karusell img{
+        width: 100%;
+  
+    }
+  }
+  /*SIIN LÕPPEB SLAIDER*/
+
+
+  /*SIIT HAKKAB MINA LEHE FOTO*/
+  .ring {
+    width: 200px; /* Foto laius + 2px ääristus mõlemalt küljelt */
+    height: 200px; /* Foto kõrgus + 2px ääristus mõlemalt küljelt */
+    border: 1px solid #ee7a0d; /* 2px ääristus (raam) */
+    border-radius: 50%; /* Ümmargune kuju */
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Vältida pildi raami väljumist */
+    margin-top: 48px;
+    left: 40px;
+    position: relative;
+    transform: translate(20px, 20px) scale(1.5);
+}
+  
+.ring img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* Keskendame ja suurendame korraga */
+}
+/*SIIT LÕPPEB ESILEHE FOTO OSA*/
+
+
+/*SAAME TUTTAVAKS KAARDI ALGUS*/
+.saame-tuttavaks {
+    position: relative;
+    border: 0.5px solid #ee7a0d;
+    border-radius: 7px;
+    margin-top: 7.8%;
+    margin-left: 3%;
+    padding: 20px;  /* Sellega saan kasti kirja jaoks suuremaks teha*/
+    padding-top: 1%;
+    padding-left: 20px;/* See annab mulle teksti boxsi sees paigutuse*/
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    width: 100%;
+  }
+  /*SAAME TUTTAVAKS KAARDI LÕPP*/
+
+  /*LOE ROHKEM KAKS KAARTI ALGUS*/
+  .loe-rohkem-kastid {
+    position: relative;
+    margin-left: 3.5%;
+    margin-top: 0%;
+    width: 200%;
+    max-width: 1200px;
+  }
+  
+  .loe-rohkem-kastid .kaardid-loe-rohkem  /* Kaardi (card) osa*/
+  {
+  position: relative;
+  width: 95%;/*See on kõikide cardide laius*/
+  padding: 20px;
+  margin-top: 50px;
+  background: white;
+  border-radius: 2%;
+  border: solid #ee7a0d;
+  border-width: 1px;
+  }
+  
+  .loe-rohkem-kastid .kaardid-loe-rohkem::before /*see peaks olema joone kolmnurgad*/
+  {
+    content: '';
+    position: absolute;
+    top: 20.1%;
+    right: 45%;
+    border-top: 20px solid #feeadf;
+    border-right: 20px solid #a43f3f;
+    transform: rotate(45deg); /* Pöörake elementi 45 kraadi */
+    transform-origin: top right; /* Määrake pööramise keskpunkt ülemisse paremasse nurka */
+  }
+    
+  
+  
+  
+  .loe-rohkem-kastid .kaardid-loe-rohkem .sisu-loe-rohkem
+  {
+    position: relative;
+    height: 214px;
+    overflow: hidden;
+  }
+  
+  .loe-rohkem-kastid .kaardid-loe-rohkem.active .sisu-loe-rohkem
+  {
+  height: auto;
+  }
+  
+  .loe-rohkem-kastid .kaardid-loe-rohkem .sisu-loe-rohkem::before /* See osa teeb kirjale valge kasti, mille muudab siis natuke transparendiks.*/
+  {
+    content: '';/*Kui see ära võtta siis kaob ka hajusus kirja peal*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(transparent,#ffebde);/* Siia tuleb boxsi taustavärv panna*/
+  }
+  
+  .loe-rohkem-kastid .kaardid-loe-rohkem.active .sisu-loe-rohkem::before
+  {
+  display: none;
+  }
+  
+  .loe-rohkem-kastid .kaardid-loe-rohkem .sisu-loe-rohkem h3 /*Pealkiri*/
+  {
+    color: rgb(252, 111, 59);
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center; /* Lisatud, et tekst oleks keskele joondatud horisontaalselt */
+    display: flex; /* Lisatud, et kasutada Flexboxi omadusi */
+    justify-content: center; /* Lisatud, et pealkiri oleks horisontaalselt keskel */
+    align-items: center; /* Lisatud, et pealkiri oleks vertikaalselt keskel */
+  }
+  
+  .loe-rohkem-kastid .kaardid-loe-rohkem .sisu-loe-rohkem {
+    position: relative;
+    /* ...muud stiilireeglid... */
+  }
+  
+  .loe-rohkem-kastid .kaardid-loe-rohkem .sisu-loe-rohkem .joon {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 0.1px;
+    background-color: #ccc; /* Halli joone värv */
+  }
+  
+  
+  
+  .loe-rohkem-kastid .kaardid-loe-rohkem .sisu-loe-rohkem p
+  {
+    font-weight: 326;
+    color: #000000;
+    padding-top: 10%;
+  }
+  
+  .loe-rohkem-kastid .kaardid-loe-rohkem .rohkem /* See on nupu funktsioonid ja suurused*/
+  {
+    position: relative;         /*See reegel määrab elemendi positsiooni suhtes selle esialgsele asukohale. "Relative" tähendab, et see jääb oma tavalisse asukohta, kuid seda saab nihutada kasutades näiteks "top", "right", "bottom" ja "left"*/
+    padding: 10px 10px;         /*See reegel määrab elemendi sisemise polstri, mis on tühimik elementi ja selle sisu vahel. "10px" on ülemine ja alumine polster ning "15px" on vasak ja parem polster.*/
+    width: 125.9px;               /*Nupu pikkus*/
+    background: #f9883d;      /*See reegel määrab elemendi taustavärvi.*/
+    margin-top: 15px;           /*See reegel määrab elemendi ülemise serva ja selle ülemise naabri vahelise tühimiku (marginaali). "15px" on siin tühimiku suurus.*/
+    display: inline-block;      /*See reegel määrab elemendi kuvamisviisi. "Inline-block" teeb elemendi sarnaseks inline-elementidega, mis tähendab, et see sobib samasse ritta teiste inline-elementidega, kuid võimaldab ka blokkidele omaseid omadusi.*/
+    cursor: pointer;            /*See reegel muudab hiirekursori elemendi peal olles. "Pointer" kursor näitab, et tegemist on lingi või klõpsatava elemendiga.*/
+    text-transform: uppercase;  /*See reegel muudab elemendi teksti suurteks tähtedeks.*/
+    color:#ffffffd9;          /*See reegel määrab teksti värvi. "#383838" on konkreetselt värvikood.*/
+    font-weight: 500;           /*See reegel määrab teksti rasvuse. "500" on siin keskmise rasvuse taseme väärtus.*/
+    letter-spacing: 2px;        /*See reegel määrab tähevahe tekstis. "2px" */
+    font-size: 14px;            /*See reegel määrab teksti suuruse. "14px" */
+    border-radius: 6px;
+  }
+  .loe-rohkem-kastid .kaardid-loe-rohkem.active .rohkem 
+  {
+    background: #f8c9a7;
+    color: #4c4b4b;
+  }
+  
+  .loe-rohkem-kastid .kaardid-loe-rohkem .rohkem::before
+  {
+  content: 'Loe Rohkem';
+  }
+  
+  .loe-rohkem-kastid .kaardid-loe-rohkem.active .rohkem::before
+  {
+    content: 'Loe vähem';
+  }
+  /* MINU ÕPINGUD KAART JA TÖISED TEGEMISED KAART lõpp*/
+
+
+  
