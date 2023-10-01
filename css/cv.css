@@ -1,0 +1,64 @@
+
+
+.container-cv-1 {
+    display: flex;
+    width: 100%; /* Muudetud 100%-le */
+    height: 300px;
+    background-color: white;
+    border: solid 1px #8b8b8b;
+    border-radius: 10px;
+    justify-content: center;
+}
+.container-cv-2 {
+    display: flex;
+    width: 100%; /* Muudetud 100%-le */
+    height: 300px;
+    background-color: #8b8b8b;
+    border-radius: 10px;
+    align-items: center;
+}
+.profile-container {
+    flex: 1;  /* Võtab pool laiusest */
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;  /* Paigutab pildi vasakusse äärde */
+    margin-top: 20%;
+}
+
+.profile-picture {
+    max-width: 100%;  /* Et pilt ei ulatuks üle konteineri */
+    height: auto;
+}
+
+.text-container {
+    flex: 1;  /* Võtab samuti pool laiusest */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;  /* Paigutab teksti paremasse äärde */
+}
+
+.cv-text {
+    font-size: 200px;
+    font-weight: bold;
+    margin-left: 20px;  /* Lisab veidi ruumi pildi ja teksti vahele */
+    padding-right: 80px;
+}
+
+
+
+.container-cv-3 {
+    display: flex;
+    width: 100%; /* Muudetud 100%-le */
+    height: 300px;
+    background-color: #8b8b8b;
+    border-radius: 10px;
+}
+
+.container-cv-4 {
+    display: flex;
+    width: 100%; /* Muudetud 100%-le */
+    height: 300px;
+    background-color: white;
+    border: solid 1px #8b8b8b;
+    border-radius: 10px;
+}
