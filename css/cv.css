@@ -9,6 +9,7 @@
     border-radius: 10px;
     justify-content: center;
 }
+/*2 SIIT ALGAB CV NR 2 KAST*/
 .container-cv-2 {
     display: flex;
     width: 100%; /* Muudetud 100%-le */
@@ -24,35 +25,50 @@
     justify-content: flex-start;  /* Paigutab pildi vasakusse äärde */
     margin-top: 20%;
 }
-
 .profile-picture {
     max-width: 100%;  /* Et pilt ei ulatuks üle konteineri */
     height: auto;
 }
-
 .text-container {
     flex: 1;  /* Võtab samuti pool laiusest */
     display: flex;
     align-items: center;
     justify-content: flex-end;  /* Paigutab teksti paremasse äärde */
 }
-
 .cv-text {
     font-size: 200px;
     font-weight: bold;
     margin-left: 20px;  /* Lisab veidi ruumi pildi ja teksti vahele */
     padding-right: 80px;
 }
+/* 2 SIIT LÕPPEB CV NR 2 KAST*/
 
-
-
+/* 3 SIIT ALGAB CV NR 3 KAST*/
 .container-cv-3 {
     display: flex;
     width: 100%; /* Muudetud 100%-le */
     height: 300px;
     background-color: #8b8b8b;
     border-radius: 10px;
+    padding: 20px;
 }
+.container-cv-3 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;  /* Lisab veidi ruumi pealkirja ja loendi vahele */
+    margin-right: 1rem;
+}
+
+.container-cv-3 ul {
+    list-style-type: disc;  /* Näitab punktidega loendit */
+    margin-top: 40px;
+    margin-left: -2rem;
+}
+
+
+
+
+
+
 
 .container-cv-4 {
     display: flex;
