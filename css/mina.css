@@ -19,13 +19,21 @@
 
   .päris-lollakas-slaider{
     display: flex;
-    position: relative;
     flex-direction: column; 
     padding: 0 35px;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    margin-top: 0.1%;
+    margin-top: 12%;
+  }
+  .päris-lollakas-slaider-x{
+    display: flex;
+    flex-direction: column; 
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 5%;
   }
   
   
@@ -154,6 +162,9 @@
     padding-bottom: 50px;
     padding-top: 20px;
     width: 100%;
+  }
+  .saame-tuttavaks h3{
+    color: #ee7a0d;
   }
   /*SAAME TUTTAVAKS KAARDI LÕPP*/
 
@@ -289,5 +300,32 @@
   }
   /* MINU ÕPINGUD KAART JA TÖISED TEGEMISED KAART lõpp*/
 
-
+.btn-primary{
+  margin-top: 20px;
+  color: white;
+  background-color: #f9883d;
   
+}
+
+/*SEE ON SLAIDERI PEALSED TEKSTID*/
+.container-text-1{
+  display: flex;
+  padding-top: 100px;
+  color: #ee7a0d;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 200px;
+  }
+  .container-text-2{
+    display: flex;
+    padding-top: 100px;
+    color: #ee7a0d;
+    margin-left: 40px;
+    justify-content: center;
+    justify-items: center;
+    }
+
+    .container-text-2 .row{
+      text-align: center;
+    }
+      
