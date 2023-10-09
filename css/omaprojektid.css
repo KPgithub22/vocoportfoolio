@@ -1,10 +1,34 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/*BLOKK 2*/
+.blokk2{
+    display: flex;
+    color: #fb6804;
+    font-weight: ;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
 /* Üldine konteineri stiil *//* Siia võid lisada üldisi stiile, mis mõjutavad kogu konteinerit */
 
 .container-porjektid {
 flex-wrap: wrap;
 justify-content: center;
 flex-direction: column;
-margin-top: 90px;
+margin-top: 40px;
 }
 
 /* Ridade stiilid */
@@ -21,9 +45,18 @@ margin-top: 90px;
 }
 
 /* Kaardi üldised stiilid */
+
+
+
+
+
+
+
+
 .card {
     border: solid 1px #fb6304;
     margin: 10px;
+    height: 100%;
 }
 
 
@@ -76,19 +109,22 @@ margin-top: 90px;
 /* Kaardi teksti stiilid */
 .card-text {
     padding-left: 20px;
-    font-weight: 200;
+    font-weight: ligh;
 }
 
 .collapse{
-    width: 130%;
-    margin-left: -150px;
+    width: 100%;
+    margin-left: px;
 }
 .custom-btn-outline {
-    float: center; /* Liiguta nupp paremale äärele */
+    float: center; 
     margin-left: 44px;
     padding: 10px;
     color: #fb6304;
+    border: solid 2px;
 } 
+
+
 /*SIIN ON HEADERI JOONEGA PEALKIRJA TEXST*/
 
   
@@ -109,3 +145,41 @@ margin-top: 90px;
     padding: -50px;
   }
   /*SIIN LÕPPEB HEADERI PEALKIRJAGA TEXST*/
+
+  /*MENÜÜ ALGUS*/
+.navbar{
+    background-color: rgb(255, 255, 255); /* Muudame navbari tausta valgeks */
+    border: 1px solid rgb(165, 165, 165); /* Lisame piiratud musta joone */
+    }
+    .navbar .navbar-nav .nav-item .nav-link {
+        color: rgb(243, 109, 7); /* Muudame teksti värvi oranžiks */
+    }
+      
+    .navbar .navbar-nav .nav-item .nav-link:hover {
+        color: #07677f; /* Muudame teksti värvi oranžiks, kui hiirekursor on üle sõna */
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: solid 1px #fb6304;
+    }
+      
+    .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+        color: #07677f; /* Muudame teksti värvi oranžiks dropdown menüüs */
+    }
+      
+    .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    color: #07677f; 
+    background-color: #fb9570;
+    }
+    .navbar-nav .nav-link {
+    font-weight: 400;
+    }
+    
+  
+  
+    /* MENÜÜ LÕPP*/
+      
+      
+      
+      
+      

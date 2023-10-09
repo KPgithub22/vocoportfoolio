@@ -2,20 +2,24 @@
 
 .container-cv-1 {
     display: flex;
+    flex-direction: column;
     width: 100%; /* Muudetud 100%-le */
     height: 300px;
     background-color: white;
-    border: solid 1px #8b8b8b;
+    border: solid 1px orangered;
     border-radius: 10px;
     justify-content: center;
+}
+.text-nimi h1{
+    color: orangered;
 }
 /*2 SIIT ALGAB CV NR 2 KAST*/
 .container-cv-2 {
     display: flex;
     width: 100%; /* Muudetud 100%-le */
     height: 300px;
-    background-color: #8b8b8b;
     border-radius: 10px;
+    border: 1px solid #07677f;
     align-items: center;
 }
 .profile-container {
@@ -40,6 +44,7 @@
     font-weight: bold;
     margin-left: 20px;  /* Lisab veidi ruumi pildi ja teksti vahele */
     padding-right: 80px;
+    color: #094757;
 }
 /* 2 SIIT LÕPPEB CV NR 2 KAST*/
 
@@ -50,19 +55,21 @@
     align-items: flex-start;
     width: 100%; /* Muudetud 100%-le */
     height: 400px;
-    background-color: #8b8b8b;
+    background-color: #094757;
     border-radius: 10px;
     padding: 20px;
 }
 .container-cv-3 h3 {
     font-size: 1.2rem;
-    margin-bottom: 20px;  /* Lisab veidi ruumi pealkirja ja loendi vahele */
+    margin-bottom: 20px; 
+    color: orangered;
 }
 
 .container-cv-3 ul {
     list-style-type: disc;  /* Näitab punktidega loendit */
     margin-left: 2px;
     margin-top: 3%;
+    color: white;
 }
 
 .container-cv-4 {
@@ -73,7 +80,7 @@
     height: 400px;
     padding: 20px; /* Lisatud, et luua ruumi containeri sisemuses */
     background-color: white;
-    border: solid 1px #8b8b8b;
+    border: solid 1px #07677f;
     border-radius: 10px;
     box-sizing: border-box; /* Veendu, et padding ei suurenda containeri suurust */
 }
@@ -92,6 +99,7 @@
 .container-cv-4 h3 {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    color: #07677f;
 }
 
 .container-cv-4 ul {
@@ -106,7 +114,7 @@
 .container-cv-5 {
     display: flex;
     width: 100%; /* Muudetud 100%-le */
-    height: 300px;
+    height: 400px;
     background-color: white;
     border: solid 1px #8b8b8b;
     border-radius: 10px;
@@ -119,13 +127,73 @@
 
 .container-cv-6 {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%; /* Muudetud 100%-le */
-    height: 300px;
-    background-color: #8b8b8b;
+    height: 400px;
+    background-color: #094757;
     border-radius: 10px;
-    justify-content: center;
+    box-sizing: border-box;
 }
-.container-cv-6 h4{
-    color: rgb(206, 84, 39);
+.container-cv-6 h3{
+    color: orangered;
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
+
+.container-cv-6 ul{
+    list-style-type: disc;
+    color: aliceblue;
+    margin-left: 20px;
+}
+
+/*SIIT ALGAB FOOTER*/
+.viimane-joon {
+    max-width: 1200px;
+    padding: 5px;
+    border-bottom: 1px solid ;
+    background-color: white;
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .viimane-joon p{
+    font-weight: 200;
+    color: #fb6304;
+    padding-top: 30px;
+  }
+  /*SIIT LÕPPEB FOOTER*/
+
+  /*MENÜÜ ALGUS*/
+.navbar{
+    background-color: rgb(255, 255, 255); /* Muudame navbari tausta valgeks */
+    border: 1px solid rgb(178, 178, 178); /* Lisame piiratud musta joone */
+    }
+    .navbar .navbar-nav .nav-item .nav-link {
+        color: rgb(243, 109, 7); /* Muudame teksti värvi oranžiks */
+    }
+      
+    .navbar .navbar-nav .nav-item .nav-link:hover {
+        color: #07677f; /* Muudame teksti värvi oranžiks, kui hiirekursor on üle sõna */
+    }
+      
+    .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+        color: #07677f; /* Muudame teksti värvi oranžiks dropdown menüüs */
+    }
+      
+    .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    color: #07677f; /* Muudame teksti värvi oranžiks, kui hiirekursor on üle dropdown menüü sõna */
+    }
+    /* Muuda navbari menüü teksti fonti Montserrat'iks */
+    .navbar-nav .nav-link {
+    font-weight: 400; 
+    }
+    /* MENÜÜ LÕPP*/
+      
+      
+      
+      
+  
