@@ -1,6 +1,6 @@
 /*ESILEHT ALGUS*/
 .foto {
-    background: url('/css/images/kala2.png');
+    background: url('./images/kala2.png');
     height: 90vh;
     background-size: 80% auto; /* Muudetud pildi laius ja kõrgus automaatne */
     background-repeat: no-repeat;
