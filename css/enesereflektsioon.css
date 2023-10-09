@@ -302,29 +302,41 @@ color: #fb6304;
   
 /*MENÜÜ ALGUS*/
 .navbar{
-background-color: rgb(255, 255, 255); /* Muudame navbari tausta valgeks */
-border: 1px solid rgb(178, 178, 178); /* Lisame piiratud musta joone */
-}
-.navbar .navbar-nav .nav-item .nav-link {
-    color: rgb(243, 109, 7); /* Muudame teksti värvi oranžiks */
-}
+  background-color: rgb(255, 255, 255); /* Muudame navbari tausta valgeks */
+  border: 1px solid rgb(165, 165, 165); /* Lisame piiratud musta joone */
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+      color: rgb(243, 109, 7); /* Muudame teksti värvi oranžiks */
+  }
+    
+  .navbar .navbar-nav .nav-item .nav-link:hover {
+      color: #07677f; /* Muudame teksti värvi oranžiks, kui hiirekursor on üle sõna */
+  border-radius: 10px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: solid 1px #fb6304;
+  }
+    
+  .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+      color: #07677f; /* Muudame teksti värvi oranžiks dropdown menüüs */
+  }
+    
+  .navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  color: #07677f; 
+  background-color: #fb9570;
+  }
+  .navbar-nav .nav-link {
+  font-weight: 400;
+  }
   
-.navbar .navbar-nav .nav-item .nav-link:hover {
-    color: #050504; /* Muudame teksti värvi oranžiks, kui hiirekursor on üle sõna */
-}
-  
-.navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
-    color: rgb(198, 89, 5); /* Muudame teksti värvi oranžiks dropdown menüüs */
-}
-  
-.navbar .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
-color: rgb(198, 89, 5); /* Muudame teksti värvi oranžiks, kui hiirekursor on üle dropdown menüü sõna */
-}
-/* Muuda navbari menüü teksti fonti Montserrat'iks */
-.navbar-nav .nav-link {
-font-weight: 400; 
-}
-/* MENÜÜ LÕPP*/
+
+
+  /* MENÜÜ LÕPP*/
+    
+    
+    
+    
+    
 
 /*SIIT ALGAB HEADER*/
 .fotobox-header {
